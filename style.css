@@ -635,6 +635,7 @@ body.dark-mode {
   flex-wrap: wrap;
   gap: 0.5rem;
   justify-content: center;
+  
 }
 
 .skill-tag {
@@ -1143,4 +1144,3 @@ html {
   height: 30vh;
   margin: 0 auto;
 }
-
