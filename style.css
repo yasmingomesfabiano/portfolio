@@ -274,7 +274,7 @@ body.dark-mode {
 
 /* ===== HEADER E NAVEGAÇÃO ===== */
 .header {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
@@ -817,6 +817,7 @@ body.dark-mode {
     padding-left: 2rem;
   }
 }
+
 
 
 .timeline-content {
