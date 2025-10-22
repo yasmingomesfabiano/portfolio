@@ -71,8 +71,8 @@
   }
 
   .project-card, .project-image, .timeline, .timeline-item, .timeline-content {
-    width: 90vw !important;
-    max-width: 90vw !important;
+    width: 97vw !important;
+    max-width: 97vw !important;
     min-width: 0 !important;
     padding-left: 0 !important;
     padding-right: 0 !important;
@@ -94,19 +94,16 @@
     max-width: 98vw !important;
     padding: 0.7rem !important;
     margin-bottom: 15px !important;
-    margin-top: 40px !important;
   }
 
   .contact-info h3, .contact-info p {
     font-size: 1rem !important;
-    margin-top: 50px;
   }
 
   .footer {
     font-size: 0.9rem !important;
     padding: 0.9rem 0 !important;
     margin: 0 !important;
-    
   }
 }
 
@@ -194,7 +191,7 @@ body.dark-mode {
   color: white;
 }
 .btn-primary:hover {
-  background: var(--color-secondary);
+  background: var(--color-accent);
   transform: translateY(-1px);
 }
 .btn-secondary {
@@ -214,10 +211,10 @@ body.dark-mode {
   margin: 0 auto;
   background-color: var(--color-primary);
   color: white;
-  width: 30vw;
+  width: 10vw;
   height: 4vh;
   border-radius: 50px;
-  font-size: 12px;
+  font-size: 15px;
   border: var(--color-border);
   cursor: pointer;
 }
@@ -272,6 +269,7 @@ body.dark-mode {
 
 /* ===== HEADER E NAVEGAÇÃO ===== */
 .header {
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -635,7 +633,7 @@ body.dark-mode {
   flex-wrap: wrap;
   gap: 0.5rem;
   justify-content: center;
-  
+  margin-top: 50px;
 }
 
 .skill-tag {
@@ -692,7 +690,7 @@ body.dark-mode {
 .project-card {
   background: var(--color-background);
   border: 1px solid var(--color-border);
-  box-shadow: 0 2px 10px var(--color-primary);
+  box-shadow: 0 4px 20px var(--color-primary);
   border-radius: 1rem;
   padding: 1.5rem;
   transition: all 0.3s ease;
@@ -773,7 +771,7 @@ body.dark-mode {
 }
 
 .timeline {
-  max-width: 700px;
+  max-width: 800px;
   margin: 0 auto;
   position: relative;
 }
@@ -799,7 +797,7 @@ body.dark-mode {
 }
 @media (min-width: 768px) {
   .timeline-item {
-    width: 40%;
+    width: 50%;
     padding-left: 0;
     padding-right: 2rem;
   }
@@ -817,9 +815,7 @@ body.dark-mode {
   border-radius: 1rem;
   padding: 1.5rem;
   transition: all 0.3s ease;
-  box-shadow: 0 2px 10px var(--color-primary);
-  
-  
+  box-shadow: 0 4px 20px var(--color-primary);
 
 }
 .timeline-content:hover {
@@ -911,7 +907,7 @@ body.dark-mode {
   border-radius: 1rem;
   padding: 1.5rem;
   transition: all 0.3s ease;
-  width: 30vw;
+  width: 40vw;
   margin: 0 auto;
   margin-bottom: 50px;
   box-shadow: 0 4px 20px var(--color-primary);
@@ -1144,4 +1140,3 @@ html {
   height: 30vh;
   margin: 0 auto;
 }
-
