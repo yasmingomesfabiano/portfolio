@@ -907,7 +907,7 @@ body.dark-mode {
   border-radius: 1rem;
   padding: 1.5rem;
   transition: all 0.3s ease;
-  width: 40vw;
+  width: 30vw;
   margin: 0 auto;
   margin-bottom: 50px;
   box-shadow: 0 4px 20px var(--color-primary);
@@ -1139,4 +1139,5 @@ html {
   width: 15vw;
   height: 30vh;
   margin: 0 auto;
+
 }
