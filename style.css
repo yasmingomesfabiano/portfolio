@@ -921,6 +921,7 @@ body.dark-mode {
   transition: all 0.3s ease;
   width: 40vw;
   margin: 0 auto;
+  margin-top: 50px;
   margin-bottom: 50px;
   box-shadow: 0 4px 20px var(--color-primary);
 }
