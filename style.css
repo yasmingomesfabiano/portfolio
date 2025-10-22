@@ -70,7 +70,7 @@
     font-size: 0.9rem !important;
   }
 
-  .project-card, .project-image, .timeline, .timeline-item, .timeline-content {
+  .project-card, .project-image {
     width: 97vw !important;
     max-width: 97vw !important;
     min-width: 0 !important;
@@ -792,6 +792,7 @@ body.dark-mode {
   top: 0;
   bottom: 0;
   width: 2px;
+  box-shadow: 0 20px 20px var(--color-primary);
   background: var(--color-border);
 }
 @media (min-width: 768px) {
@@ -803,13 +804,15 @@ body.dark-mode {
 .timeline-item {
   position: relative;
   margin-bottom: 3rem;
-  padding-left: 4rem;
+  padding-left: 50px;
+  padding-right: 2rem;
+  text-align: left;
 }
 @media (min-width: 768px) {
   .timeline-item {
     width: 50%;
-    padding-left: 0;
-    padding-right: 2rem;
+    padding-left: 50px;
+    
   }
   .timeline-item:nth-child(even) {
     left: 50%;
@@ -822,11 +825,10 @@ body.dark-mode {
 
 .timeline-content {
   background: var(--color-background);
-  border: 1px solid var(--color-border);
-  border-radius: 1rem;
+  border: 2px solid var(--color-border);
+  border-radius: 2rem;
   padding: 1.5rem;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 20px var(--color-primary);
   transition: all 0.3s ease; 
 
 }
@@ -866,8 +868,6 @@ body.dark-mode {
   justify-content: center;
   display: flex;
   flex-direction: column;
-  
-
 }
 .contact-content {
   display: grid;
@@ -920,7 +920,7 @@ body.dark-mode {
   border-radius: 1rem;
   padding: 1.5rem;
   transition: all 0.3s ease;
-  width: 40vw;
+  width: 35vw;
   margin: 0 auto;
   margin-top: 50px;
   margin-bottom: 50px;
