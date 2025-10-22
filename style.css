@@ -173,25 +173,42 @@ body.dark-mode {
   }
 }
 
-.btn {
-  display: inline-flex;
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    border: 2px solid var(--color-border);
+    font-size: 1rem;
+  }
+
+.btn-contact{
+  background: var(--color-primary);
+  color: white;
+  display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0.75rem 1.5rem;
-  border-radius: 0.5rem;
-  font-weight: 500;
-  text-decoration: none;
-  transition: all 0.2s ease;
-  cursor: pointer;
-  border: none;
-  font-size: 1rem;
+  margin: 0 auto;
+  
 }
+
+.btn-contact:hover {
+  background: var(--color-secondary);
+  transform: translateY(-1px);
+}
+  
 .btn-primary {
   background: var(--color-primary);
   color: white;
 }
 .btn-primary:hover {
-  background: var(--color-accent);
+  background: var(--color-secondary);
   transform: translateY(-1px);
 }
 .btn-secondary {
@@ -204,20 +221,7 @@ body.dark-mode {
   background: var(--color-primary);
   color: white;
 }
-.button-primary{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  background-color: var(--color-primary);
-  color: white;
-  width: 10vw;
-  height: 4vh;
-  border-radius: 50px;
-  font-size: 15px;
-  border: var(--color-border);
-  cursor: pointer;
-}
+
 .button-primary:hover{
   background-color: #f4bbd3;
 }
@@ -243,7 +247,7 @@ body.dark-mode {
 
 .imagem-inicio {
   margin-bottom: 1.5rem;
-  max-width: 270px;
+  max-width: 350px;
   width: 35vw;
   height: auto;
   border-radius: 2rem;
@@ -261,7 +265,8 @@ body.dark-mode {
     margin-bottom: 1rem;
   }
   .imagem-inicio {
-    width: 55vw;
+    width: 60vw;
+    height: auto;
     margin-bottom: 1rem;
   }
 }
@@ -464,16 +469,21 @@ body.dark-mode {
 .hero-image {
   display: flex;
   justify-content: center;
+  
 }
 .hero-image .profile-placeholder {
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height:400px;
   background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 6rem;
+  width: 30vw;
+  height: 60vh;
+  border: 2px solid var(--color-primary);
+  box-shadow: 0 4px 20px var(--color-primary);
 }
 @media (min-width: 768px) {
   .hero-image .profile-placeholder {
@@ -907,7 +917,7 @@ body.dark-mode {
   border-radius: 1rem;
   padding: 1.5rem;
   transition: all 0.3s ease;
-  width: 30vw;
+  width: 40vw;
   margin: 0 auto;
   margin-bottom: 50px;
   box-shadow: 0 4px 20px var(--color-primary);
@@ -1002,12 +1012,7 @@ html {
   scroll-padding-top: 80px;
 }
 
-.imagem-inicio{
-    width: 20vw;
-    height: 50vh;
-    border: 2px solid var(--color-primary);
-    box-shadow: 0 4px 20px var(--color-primary);
-}
+
 @media(min-width: 768px){
   .imagem-inicio{
     width: 600px;
@@ -1139,5 +1144,4 @@ html {
   width: 15vw;
   height: 30vh;
   margin: 0 auto;
-
 }
