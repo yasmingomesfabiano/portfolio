@@ -787,7 +787,7 @@ body.dark-mode {
 }
 .timeline::before {
   content: "";
-  position: absolute;
+  position:absolute;
   left: 1.5rem;
   top: 0;
   bottom: 0;
@@ -827,6 +827,7 @@ body.dark-mode {
   padding: 1.5rem;
   transition: all 0.3s ease;
   box-shadow: 0 4px 20px var(--color-primary);
+  transition: all 0.3s ease; 
 
 }
 .timeline-content:hover {
