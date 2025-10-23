@@ -88,13 +88,6 @@
     display: block;
   }
 
-  .contact-form {
-    width: 96vw !important;
-    min-width: 0 !important;
-    max-width: 98vw !important;
-    padding: 0.7rem !important;
-    margin-bottom: 15px !important;
-  }
 
   .contact-info h3, .contact-info p {
     font-size: 1rem !important;
@@ -184,7 +177,6 @@ body.dark-mode {
     text-decoration: none;
     transition: all 0.2s ease;
     cursor: pointer;
-    border: 2px solid var(--color-border);
     font-size: 1rem;
   }
 
@@ -208,7 +200,7 @@ body.dark-mode {
   color: white;
 }
 .btn-primary:hover {
-  background: var(--color-secondary);
+  background: #f4bbd3;
   transform: translateY(-1px);
 }
 .btn-secondary {
@@ -917,8 +909,7 @@ body.dark-mode {
   }
 }
 .contact-info h3 {
-  margin-top: 50px;
-  font-size: 1.9rem;
+  font-size: 2rem;
   font-weight: 600;
   margin-bottom: 1rem;
   color: var(--color-primary);
@@ -951,53 +942,7 @@ body.dark-mode {
   text-decoration: underline;
 }
 
-.contact-form {
-  background: var(--color-background);
-  border: 1px solid var(--color-border);
-  border-radius: 1rem;
-  padding: 1.5rem;
-  transition: all 0.3s ease;
-  width: 35vw;
-  margin: 0 auto;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  box-shadow: 0 4px 20px var(--color-primary);
-}
-.contact-form:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-}
-.contact-form .form-group {
-  margin-bottom: 1.5rem;
-  
-}
-.contact-form .form-group label {
-  display: block;
-  margin-bottom: 0.5rem;
-  font-weight: 500;
-  color: var(--color-text-primary);
-}
-.contact-form .form-group input,
-.contact-form .form-group textarea {
-  width: 100%;
-  padding: 0.75rem;
-  border: 1px solid var(--color-border);
-  border-radius: 0.5rem;
-  background: var(--color-background);
-  color: var(--color-text-primary);
-  font-family: inherit;
-  font-size: 1rem;
-  transition: border-color 0.2s ease;
-}
-.contact-form .form-group input:focus,
-.contact-form .form-group textarea:focus {
-  outline: none;
-  border-color: var(--color-primary);
-}
-.contact-form .form-group textarea {
-  resize: vertical;
-  min-height: 120px;
-}
+
 
 /* ===== FOOTER ===== */
 .footer {
@@ -1186,3 +1131,4 @@ html {
   height: 30vh;
   margin: 0 auto;
 }
+
