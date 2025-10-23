@@ -308,6 +308,8 @@ body.dark-mode {
   font-weight: 700;
   color: var(--color-primary);
   margin: 0;
+  font-family: 'Metal', sans-serif;
+                                                
 }
 .nav-brand-subtitle {
   font-size: 0.875rem;
@@ -463,6 +465,7 @@ body.dark-mode {
 .hero-title .highlight {
   color: var(--color-primary);
 }
+
 .hero-subtitle {
   font-size: 1.25rem;
   color: var(--color-text-secondary);
