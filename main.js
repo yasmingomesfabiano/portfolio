@@ -25,27 +25,40 @@ class Portfolio {
         const themeToggle = document.getElementById('theme-toggle');
         const body = document.body;
         const themeIcon = document.querySelector('.theme-icon');
-
+        
+        const themeIconMoon = document.querySelector('.theme-icon-moon');
+    
+    
         // Verificar preferência salva ou do sistema
         const savedTheme = localStorage.getItem(CONFIG.THEME_KEY);
         const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-
+    
         if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
             body.classList.add('dark-mode');
-            themeIcon.textContent = '☀️';
+            themeToggle.checked = true;
+            themeIcon.textContent = '🌙'; // Lua modo escuro
+        } else {
+            body.classList.remove('dark-mode');
+            themeToggle.checked = false;
+            themeIcon.textContent = '☀️'; // Sol modo claro
         }
-
-        themeToggle.addEventListener('click', () => {
+    
+        themeToggle.addEventListener('change', () => {
             body.classList.toggle('dark-mode');
             const isDark = body.classList.contains('dark-mode');
-            
-            themeIcon.textContent = isDark ? '🌙' : '☀️';
             localStorage.setItem(CONFIG.THEME_KEY, isDark ? 'dark' : 'light');
-            
-            // Animação suave do ícone
-            themeIcon.style.transform = 'scale(0.8)';
+    
+            // animação do ícone
+            themeIcon.style.transition = 'transform 0.2s ease';
+            themeIcon.style.transform = 'scale(0.9)';
             setTimeout(() => {
                 themeIcon.style.transform = 'scale(1)';
+            }, 150);
+    
+            themeIconMoon.style.transition = 'transform 0.2s ease';
+            themeIconMoon.style.transform = 'scale(0.8)';
+            setTimeout(() => {
+                themeIconMoon.style.transform = 'scale(1)';
             }, 150);
         });
     }
