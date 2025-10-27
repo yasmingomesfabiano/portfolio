@@ -9,7 +9,7 @@
     max-width: 98vw !important;
     min-width: 0 !important;
     padding: 0 5px !important;
-    margin: 0 auto !important;
+    margin: 0 auto;
     box-sizing: border-box;
   }
 
@@ -153,6 +153,7 @@ body.dark-mode {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 30px;
 
 }
 @media (min-width: 768px) {
@@ -250,6 +251,7 @@ body.dark-mode {
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
   text-align: center;
+  
 }
 @media (max-width: 767px) {
   .section-title {
@@ -645,15 +647,16 @@ body.dark-mode {
   background: var(--color-background);
   border: 1px solid var(--color-border);
   box-shadow: 0 4px 10px var(--color-primary);
-  border-radius: 5000px;
   padding: 1.5rem;
   transition: all 0.3s ease;
-  height: 20vh;
-  width: 30vw;
+  height: 30vh;
+  width: 25vw;
   align-items: center;
   justify-content: center;
   margin-top: 50px;
   margin: 0 auto;
+  border-radius: 20px;
+
 }
 .skill-category:hover {
   transform: translateY(-2px);
@@ -675,7 +678,7 @@ body.dark-mode {
   flex-wrap: wrap;
   gap: 0.5rem;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .skill-tag {
@@ -900,6 +903,8 @@ body.dark-mode {
   justify-content: center;
   display: flex;
   flex-direction: column;
+  margin-top: 50px;
+  
 }
 .contact-content {
   display: grid;
@@ -912,7 +917,7 @@ body.dark-mode {
   }
 }
 .contact-info h3 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 600;
   margin-bottom: 1rem;
   color: var(--color-primary);
@@ -1135,3 +1140,7 @@ html {
   margin: 0 auto;
 }
 
+.skill-img-ferramenta{
+  width: 3.5vw;
+  height: 7vh;
+}
